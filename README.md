@@ -9,6 +9,7 @@
 1.  编写编写excel读取模板
 ![输入图片说明](https://foruda.gitee.com/images/1674012729098345310/c142f049_9263307.png "屏幕截图")
 2.  调用ExcelReader.readExcel方法
+```java
     public static void main(String[] args) throws Exception {
         ExcelReader reader = new ExcelReader();
         InputStream templateIns = Test.class.getResourceAsStream("test-template.xls");
@@ -19,5 +20,6 @@
         templateIns.close();
         dataIns.close();
     }
+```
 3.完成读取
 ![输入图片说明](https://foruda.gitee.com/images/1674012860599102135/08826fd1_9263307.png "屏幕截图")
